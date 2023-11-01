@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Music </title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="music-container">
+        <div id="music-player" class="sticky">
+            <h2>Bài hát đang phát</h2>
+            <p id="current-song">Bài hát 1</p>
+            <div>
+                <img src="https://th.bing.com/th/id/OIP.PbvWhodA9hXllxrjf4xIxQAAAA?pid=ImgDet&rs=1">
+            </div>
+            <div><audio id="audio" controls style="margin: 10px 0;">
+                    <source src="path-to-your-audio-file.mp3" type="audio/mpeg">
+                </audio></div>
+            <div>
+                <button id="back-button">Back</button>
+                <button id="play-button">Play</button>
+                <button id="skip-button">Skip</button>
+            </div>
+        </div>
+        <div id="playlist">
+            <h2 style="text-align: center;">Danh sách bài hát</h2>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th class="title">Title</th>
+                    <th class="album">Album</th>
+                    <th class="date">Dated added</th>
+                    <th class="time"><i class="fa fa-clock-o" aria-hidden="true"></i></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="title"><a href="#" data-song-index="0">Lan Man</a></td>
+                    <td class="album">Lan Man</td>
+                    <td class="date">26 Jul 2023</td>
+                    <td class="time">3:36</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="title"><a href="#" data-song-index="1">À Lôi</a></td>
+                    <td class="album">À lôi</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">3:17</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="title"><a href="#" data-song-index="2">Head In The Clouds</a></td>
+                    <td class="album">Changes - EP</td>
+                    <td class="date">2 Apr 2023</td>
+                    <td class="time">3:04</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="title"><a href="#" data-song-index="3">Thích quá Rùi Nà</a></td>
+                    <td class="album">Trung Trần</td>
+                    <td class="date">2 Apr 2023</td>
+                    <td class="time">2:58</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td class="title">Có chàng trai viết lên cây</td>
+                    <td class="album">Mắt biếc</td>
+                    <td class="date">17 Jul 2023</td>
+                    <td class="time">5:05</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+
+</html>

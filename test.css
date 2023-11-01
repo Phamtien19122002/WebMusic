@@ -1,0 +1,64 @@
+#music-container {
+    display: flex;
+    /* align-items: center; */
+}
+
+#music-player {
+    text-align: center;
+    position: fixed;
+    width: 50%; /* Đặt chiều rộng của phần music-player */
+    height: 100%; /* Đặt chiều cao cố định */
+    background-color: #f2f2f2; /* Màu nền */
+    padding: 20px;
+    overflow-y: auto; /* Cho phép cuộn nếu nội dung nhiều hơn kích thước phần */
+    float: left;
+}
+
+img {
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+#playlist {
+    margin-left: 55%;
+    margin-right: 20px;
+    text-align: left;
+}
+
+tr {
+    line-height: 3rem;
+}
+
+.title,
+.album,
+.time,
+.date {
+    padding-left: 2rem;
+}
+
+.title {
+    width: 12rem;
+}
+.album {
+    width: 10rem;
+}
+.date {
+    width: 7rem;
+}
+button {
+    border: solid gray 2px;
+    margin: 0 2rem;
+    background-color:bisque;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+#music-player img {
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover; /* Để giữ nguyên tỷ lệ 2:3 mà không bị co */
+}
